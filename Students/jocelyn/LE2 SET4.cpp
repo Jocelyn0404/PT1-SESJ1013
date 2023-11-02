@@ -8,7 +8,7 @@ int main(){
 	cout << "Enter an integer number: ";
 	cin >> num;
 	
-	while (num > 0){
+	do{
 		digit = num % 10;
 		cout << digit;
 		sum = sum * digit;
@@ -16,7 +16,7 @@ int main(){
 		if (num > 0){
 			cout << " * ";
 		}
-	}
+	}while (num > 0);
 	
 	cout << " = " << sum << endl;
 	
